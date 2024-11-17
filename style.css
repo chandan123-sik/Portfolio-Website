@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'poppins',sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+    animation: fadeIn 1.5s ease-in-out;
+}
+nav > ul{
+    display: flex;
+    justify-content: center;
+}
+nav > ul > li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+nav > ul > li > a:hover{
+    color: rgb(184, 184, 238);
+    font-size: 1.2rem;
+}
+.left{
+    font-size: 1.5rem;
+}
+.FirstSection{
+    display: flex;
+    justify-content: space-around;
+    animation: slideIn 2s ease-out;
+}
+.FirstSection > div{
+    width: 30%;
+    /* background-color: red; */
+}
+.LeftSection{
+    /* background-color: red; */
+    font-size: 2.5rem;
+    margin: 80px 0;
+    animation: textSlideIn 2s ease-in;
+}
+.RightSection > img{
+    /* background-color: red; */
+    height: 500px;
+    /* width: auto; */
+    animation: bounceIn 2s ease-in-out;
+}
+.purple{
+    color: rgb(170, 107, 228);
+}
+#element{
+    color: rgb(170, 107, 228);
+}
+.AboutSection{
+    padding-top: 3rem;
+    padding-left: 3rem;
+    font-size: 1.4rem;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+.AboutSection > p{
+    font-size: 1.3rem;
+}
+.AboutSection > img{
+    height: 250px;
+    margin-bottom: 20px;
+    animation: fadeInZoom 1.5s ease-in-out;
+}
+.ab{
+    color: lavenderblush;
+}
+.SkillsSection{
+    padding-top: 3rem;
+    padding-left: 3rem;
+    font-size: 1.4rem;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+.SkillsSection > ul > li{
+   font-size: 1.2rem; 
+}
+.SkillsSection > ul > li{
+    color: lavenderblush;
+ }
+.images{
+    border-radius: 20px;
+    height: 300px;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ProjectSection{
+    padding-top: 3rem;
+    padding-left: 3rem;
+    animation: fadeIn 1.5s ease-in;
+}
+/* .ProjectSection > h2{
+font-size: 2rem;
+}
+*/
+ project-card:hover {
+    transform: scale(1.05);
+}
+.project-card > h3 {
+    color: rgb(170, 107, 228);
+}
+.project-card > p {
+    color: lavenderblush;
+}
+footer {
+    background-color: rgb(18, 18, 62);
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    animation: fadeInUp 2s ease-in-out;
+  }
+  
+  footer h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  footer p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  footer form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: rgb(200, 200, 255);
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  input:focus, textarea:focus {
+    outline: 2px solid rgb(170, 107, 228);
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    background-color: rgb(170, 107, 228);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease; */
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: rgb(140, 87, 208);
+    transform: scale(1.05);
+  }
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes textSlideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInZoom {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav > ul {
+        flex-direction: column;
+    }
+
+    nav > ul > li {
+        margin: 10px 0;
+    }
+
+    .FirstSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .LeftSection, .RightSection {
+        width: 100%;
+    }
+
+    .RightSection > img {
+        height: 300px; 
+    }
+
+    .AboutSection, .SkillsSection, .ProjectSection, footer {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .images {
+        height: 200px;
+        padding-left: 0;
+    }
+
+    footer form {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav > ul > li {
+        margin: 10px;
+    }
+
+    .FirstSection {
+        padding: 20px;
+    }
+
+    .LeftSection {
+        font-size: 2rem;
+    }
+
+    .RightSection > img {
+        height: 400px;
+    }
+
+    .AboutSection, .SkillsSection, .ProjectSection {
+        padding: 20px 40px;
+    }
+
+    .images {
+        height: 250px;
+        padding-left: 1rem;
+    }
+}
+
+
