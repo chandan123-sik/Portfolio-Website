@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Chandan's Portfolio</div>
+        <div class="right"></div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="FirstSection" class="home">
+        <div class="LeftSection">
+          Hi, My Name is <span class="purple">Chandan</span>
+          <div>and I am a Passionate</div>
+          <!-- <div>Web Developer</div> -->
+          <!-- Element to contain animated typing -->
+          <span id="element"></span>
+        </div>
+        <div class="RightSection">
+          <img src="./king.png" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <br />
+    <hr />
+
+    <section class="AboutSection" id="about">
+      <h2>About Me :</h2>
+      <br />
+      <img src="./lo.png" alt="AboutImage" />
+      <p class="ab">
+        Hi! I'm Chandan, a web developer who loves creating interactive and
+        visually appealing web applications. My goal is to make the web more
+        accessible and engaging for everyone.
+      </p>
+    </section>
+    <!-- <br><br> -->
+    <section class="SkillsSection" id="skills">
+      <h2>Skills :</h2>
+      <br />
+      <ul>
+        <li>HTML & CSS</li>
+        <li>Data Structure And Algorithm</li>
+        <li>Responsive Design</li>
+        <li>Video Editing</li>
+      </ul>
+    </section>
+    <br /><br />
+    <img src="./19362653.jpg" class="images" alt="Image3" />
+
+    <section class="ProjectSection" id="projects">
+      <h2>Projects :</h2>
+      <br />
+      <div class="project-card">
+        <h3>Project 1: BookMyShow Clone</h3>
+        <br />
+        <p>
+          Description : Responsive and visually engaging BookMyShow website
+          showcasing my skills and projects.
+        </p>
+        <br />
+      </div>
+      <div class="project-card">
+        <h3>Project 2: Solar System Using CSS Animation</h3>
+        <br />
+        <p>
+          Description : This Project help to understand How's work it animated
+          in web page.
+        </p>
+      </div>
+    </section>
+    <br />
+    <footer id="contact">
+      <h2>Contact Me</h2>
+      <p>
+        If you have any questions or just want to say hello, feel free to send
+        me a message!
+      </p>
+
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </footer>
+    <br />
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Video Editor",
+          "Web Designer",
+          "Content Creator",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+    
+  </body>
+</html>
